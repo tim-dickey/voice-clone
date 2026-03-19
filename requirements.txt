@@ -18,7 +18,10 @@ requests==2.31.0
 python-dotenv==1.0.0
 
 # Audio and Voice Models
-fish-speech==0.1.0
+# fish-speech is not available on PyPI; install from source:
+# git clone https://github.com/fishaudio/fish-speech && pip install -e fish-speech
+# For CI and standard installs, TTS (Coqui) is used as the voice synthesis backend:
+TTS>=0.22.0
 
 # Development and Testing
 pytest==7.4.3
